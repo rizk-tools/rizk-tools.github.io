@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rizk - AI Firewall",
-  description: "Protect your AI from costly mistakes",
+  title: "Rizk - AI Policy Compliance as Code",
+  description: "Developer-first compliance as code for AI agents",
 };
 
 export default function RootLayout({
