@@ -55,7 +55,9 @@
 		<div class="flex flex-col justify-center">
 			<!-- Div 6 -->
 			<Circle class="h-20 w-20 bg-neutral-700">
-				<img src={Rizk} bind:this={div6Ref} class="h-auto w-40" alt="Rizk" />
+				<div bind:this={div6Ref} class="flex items-center justify-center">
+					<img src={Rizk} class="h-auto w-40" alt="Rizk" />
+				</div>
 			</Circle>
 		</div>
 		<div class="flec-col flex justify-center">

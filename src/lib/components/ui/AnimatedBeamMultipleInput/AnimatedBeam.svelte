@@ -42,9 +42,21 @@
 			};
 
 	let updatePath = () => {
-		let containerRect = containerRef?.getBoundingClientRect();
-		let rectA = fromRef?.getBoundingClientRect();
-		let rectB = toRef?.getBoundingClientRect();
+		// Add null checks for all refs
+		if (!containerRef || !fromRef || !toRef) {
+			console.warn('One or more refs are undefined in AnimatedBeam');
+			return;
+		}
+
+		let containerRect = containerRef.getBoundingClientRect();
+		let rectA = fromRef.getBoundingClientRect();
+		let rectB = toRef.getBoundingClientRect();
+
+		// Make sure all rects are valid before proceeding
+		if (!containerRect || !rectA || !rectB) {
+			console.warn('One or more getBoundingClientRect calls returned undefined');
+			return;
+		}
 
 		let svgWidth = containerRect.width;
 		let svgHeight = containerRect.height;
@@ -101,7 +113,6 @@
 		stroke-linecap="round"
 	/>
 	<defs>
-		<M.linearGradient />
 		<Motion
 			initial={{
 				x1: '0%',
@@ -125,7 +136,7 @@
 			isSVG={true}
 			let:motion
 		>
-			<linearGradient use:motion {id} gradientUnits="userSpaceOnUse" class="transform-gpu">
+			<linearGradient use:motion {id} gradientUnits="userSpaceOnUse">
 				<stop stop-color={gradientStartColor} stop-opacity="0"></stop>
 				<stop stop-color={gradientStartColor}></stop>
 				<stop offset="32.5%" stop-color={gradientStopColor}></stop>

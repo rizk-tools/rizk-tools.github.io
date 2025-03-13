@@ -14,7 +14,7 @@
 				'Ex-CTO of GenAI startup',
 				'Leads AI Tinkerers-Mty + Latam AI Builders community'
 			],
-			linkedin: 'https://linkedin.com/in/ricardosandoval'
+			linkedin: 'https://www.linkedin.com/in/ricardo-ivan-sandoval/'
 		},
 		{
 			name: 'Carlos Osuna',
@@ -25,7 +25,7 @@
 				'Lead GenAI Engineer',
 				'Shipped Enterprise grade GenAI from Dubai to Latam'
 			],
-			linkedin: 'https://linkedin.com/in/carlososuna'
+			linkedin: '#'
 		},
 		{
 			name: 'Fernando de la Rosa',
@@ -36,7 +36,7 @@
 				'Full-stack engineer',
 				'Early startup experience, shipped Healthtech software.'
 			],
-			linkedin: 'https://linkedin.com/in/fernandodelarosa'
+			linkedin: 'https://www.linkedin.com/in/jfdelarosa'
 		}
 	];
 </script>
@@ -48,7 +48,7 @@
 				Meet our Team
 			</h2>
 
-			<p class="text-shark-200 mx-auto mt-6 max-w-2xl text-center text-lg">
+			<p class="mx-auto mt-6 max-w-2xl text-center text-lg text-shark-200">
 				We are a team of experienced professionals who are passionate about building products that
 				help people.
 			</p>
@@ -57,15 +57,15 @@
 		<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 			{#each team as person}
 				<div
-					class="bg-shark-900/50 hover:bg-shark-900/70 group relative overflow-hidden rounded-2xl p-6 backdrop-blur-sm transition-all duration-300 lg:p-8"
+					class="group relative overflow-hidden rounded-2xl bg-shark-900/50 p-6 backdrop-blur-sm transition-all duration-300 hover:bg-shark-900/70 lg:p-8"
 				>
 					<div class="flex flex-col items-center">
 						<div class="relative mb-6">
 							<div
-								class="from-electric-lime-400/50 to-electric-lime-600/50 group-hover:from-electric-lime-400 group-hover:to-electric-lime-600 absolute -inset-1 rounded-full bg-gradient-to-br blur transition-all duration-300"
+								class="absolute -inset-1 rounded-full bg-gradient-to-br from-electric-lime-400/50 to-electric-lime-600/50 blur transition-all duration-300 group-hover:from-electric-lime-400 group-hover:to-electric-lime-600"
 							/>
 							<div
-								class="border-shark-800 relative h-28 w-28 overflow-hidden rounded-full border-2 md:h-32 md:w-32"
+								class="relative h-28 w-28 overflow-hidden rounded-full border-2 border-shark-800 md:h-32 md:w-32"
 							>
 								<img
 									src={person.image}
@@ -77,14 +77,14 @@
 						</div>
 
 						<div class="text-center">
-							<h3 class="text-electric-lime-400 text-xl font-bold md:text-2xl">
+							<h3 class="text-xl font-bold text-electric-lime-400 md:text-2xl">
 								{person.name}
 							</h3>
-							<p class="text-shark-300 mt-1 text-sm">{person.role}</p>
+							<p class="mt-1 text-sm text-shark-300">{person.role}</p>
 
 							<ul class="mt-6 space-y-3">
 								{#each person.items as item}
-									<li class="text-shark-300 text-sm md:text-base">
+									<li class="text-sm text-shark-300 md:text-base">
 										{item}
 									</li>
 								{/each}
@@ -95,7 +95,7 @@
 									href={person.linkedin}
 									target="_blank"
 									rel="noopener noreferrer"
-									class="bg-shark-800/50 text-shark-300 hover:bg-shark-800 mt-6 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm transition-colors duration-300 hover:text-white"
+									class="mt-6 inline-flex items-center gap-2 rounded-full bg-shark-800/50 px-4 py-2 text-sm text-shark-300 transition-colors duration-300 hover:bg-shark-800 hover:text-white"
 								>
 									<Linkedin class="h-4 w-4" />
 									<span>Connect on LinkedIn</span>
