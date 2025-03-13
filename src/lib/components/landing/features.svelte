@@ -35,30 +35,35 @@
 	];
 </script>
 
-<div class="text-white dark:bg-gray-100">
-	<div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-		<div class="mx-auto max-w-3xl text-center">
-			<h2 class="text-3xl font-extrabold sm:text-4xl">All the features you want</h2>
-			<p class="mt-4 text-lg dark:text-gray-600">
-				Pellentesque viverra, leo id euismod laoreet, nunc risus molestie orci, vel faucibus quam
-				justo id mauris.
+<section class="bg-gray-900 py-20">
+	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+		<div class="mx-auto mb-16 max-w-3xl text-center">
+			<h2 class="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">Core Features</h2>
+			<p class="mt-4 text-xl text-gray-400">
+				Tools to ensure AI systems operate within defined parameters.
 			</p>
 		</div>
-		<dl
-			class="mt-12 space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8"
-		>
+
+		<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
 			{#each features as feature}
-				<div class="flex">
-					<svelte:component
-						this={feature.icon}
-						class="h-6 w-6 flex-shrink-0 dark:text-violet-600"
-					/>
-					<div class="ml-3">
-						<dt class="text-lg font-medium">{feature.title}</dt>
-						<dd class="mt-2 dark:text-gray-600">{feature.description}</dd>
+				<div class="group relative">
+					<div
+						class="flex h-full flex-col rounded-xl border border-gray-700 bg-gray-800 p-6 shadow-sm transition-all duration-300 hover:border-gray-600"
+					>
+						<div
+							class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gray-700 p-3"
+						>
+							<svelte:component this={feature.icon} class="h-6 w-6 text-gray-300" />
+						</div>
+						<h3 class="mb-2 text-xl font-medium text-gray-200">
+							{feature.title}
+						</h3>
+						<p class="flex-grow text-gray-400">
+							{feature.description}
+						</p>
 					</div>
 				</div>
 			{/each}
-		</dl>
+		</div>
 	</div>
-</div>
+</section>
