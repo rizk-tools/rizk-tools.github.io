@@ -11,36 +11,36 @@
 		{
 			title: 'Runtime Control',
 			description:
-				'Take command of your AI responses with real-time policy enforcement, preventing unpredictable behavior before it happens.',
+				'Provides real-time policy enforcement for AI responses, helping to manage unexpected behavior during operation.',
 			icon: Shield
 		},
 		{
 			title: 'Privacy Protection',
 			description:
-				'Implement robust policies to safeguard personal and confidential data from unauthorized AI exposure.',
+				'Offers policy implementation options designed to protect personal and confidential data from AI system access.',
 			icon: Lock
 		},
 		{
-			title: 'Compliance Made Easy',
+			title: 'Compliance Framework',
 			description:
-				'Stay compliant with GDPR, HIPAA, SOC 2, and other regulations through automated policy enforcement.',
+				'Supports adherence to regulatory standards including GDPR, HIPAA, SOC 2, and other relevant regulations.',
 			icon: ScrollText
 		},
 		{
-			title: 'Proactive Protection',
+			title: 'Preventative Measures',
 			description:
-				'Prevent issues before they occur with runtime policy enforcement, eliminating the need for costly post-deployment fixes.',
+				'Enables runtime policy enforcement to address potential issues before deployment, reducing the need for later corrections.',
 			icon: Zap
 		}
 	];
 </script>
 
-<section class="bg-gray-900 py-20">
+<section class="bg-neutral-900 py-20">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="mx-auto mb-16 max-w-3xl text-center">
-			<h2 class="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">Core Features</h2>
-			<p class="mt-4 text-xl text-gray-400">
-				Tools to ensure AI systems operate within defined parameters.
+			<h2 class="text-3xl font-bold tracking-tight text-neutral-100 sm:text-4xl">Core Features</h2>
+			<p class="mt-4 text-xl text-neutral-400">
+				System capabilities for AI operation within defined parameters.
 			</p>
 		</div>
 
@@ -48,17 +48,17 @@
 			{#each features as feature}
 				<div class="group relative">
 					<div
-						class="flex h-full flex-col rounded-xl border border-gray-700 bg-gray-800 p-6 shadow-sm transition-all duration-300 hover:border-gray-600"
+						class="flex h-full flex-col rounded-xl border border-neutral-700 bg-neutral-800 p-6 shadow-sm transition-all duration-300 hover:border-neutral-600"
 					>
 						<div
-							class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gray-700 p-3"
+							class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-neutral-700 p-3"
 						>
-							<svelte:component this={feature.icon} class="h-6 w-6 text-gray-300" />
+							<svelte:component this={feature.icon} class="h-6 w-6 text-neutral-300" />
 						</div>
-						<h3 class="mb-2 text-xl font-medium text-gray-200">
+						<h3 class="mb-2 text-xl font-medium text-neutral-200">
 							{feature.title}
 						</h3>
-						<p class="flex-grow text-gray-400">
+						<p class="flex-grow text-neutral-400">
 							{feature.description}
 						</p>
 					</div>

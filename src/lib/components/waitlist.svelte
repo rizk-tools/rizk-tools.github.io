@@ -36,7 +36,7 @@
 		loadingButton.style.display = 'flex';
 
 		var formBody =
-			'userGroup=lunanotes-mkt&mailingLists=&email=' + encodeURIComponent(formInput.value);
+			'userGroup=rizk-waitlist&mailingLists=&email=' + encodeURIComponent(formInput.value);
 		fetch(event.target.action, {
 			method: 'POST',
 			body: formBody,

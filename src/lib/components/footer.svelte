@@ -27,27 +27,33 @@
 	];
 </script>
 
-<footer class="py-16 md:py-32">
+<footer class="border-t border-neutral-800 bg-neutral-900 py-16 text-neutral-300 md:py-24">
 	<div class="mx-auto max-w-5xl px-6">
-		<a href="/" aria-label="go home" class="mx-auto block size-fit"> </a>
+		<a href="/" aria-label="go home" class="mx-auto block size-fit">
+			<span class="text-xl font-bold text-neutral-100">Rizk</span>
+		</a>
 
-		<div class="my-8 flex flex-wrap justify-center gap-6 text-sm">
+		<div class="my-10 flex flex-wrap justify-center gap-8 text-sm">
 			{#each links as link}
-				<a href={link.href} class="text-muted-foreground hover:text-primary block duration-150">
+				<a
+					href={link.href}
+					class="text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
+				>
 					<span>{link.title}</span>
 				</a>
 			{/each}
 		</div>
-		<div class="my-8 flex flex-wrap justify-center gap-6 text-sm">
+
+		<div class="my-10 flex flex-wrap justify-center gap-8">
 			<a
 				href="#"
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="X/Twitter"
-				class="text-muted-foreground hover:text-primary block"
+				class="text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
 			>
 				<svg
-					class="size-6"
+					class="size-5"
 					xmlns="http://www.w3.org/2000/svg"
 					width="1em"
 					height="1em"
@@ -64,10 +70,10 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="LinkedIn"
-				class="text-muted-foreground hover:text-primary block"
+				class="text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
 			>
 				<svg
-					class="size-6"
+					class="size-5"
 					xmlns="http://www.w3.org/2000/svg"
 					width="1em"
 					height="1em"
@@ -84,10 +90,10 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="Facebook"
-				class="text-muted-foreground hover:text-primary block"
+				class="text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
 			>
 				<svg
-					class="size-6"
+					class="size-5"
 					xmlns="http://www.w3.org/2000/svg"
 					width="1em"
 					height="1em"
@@ -104,10 +110,10 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="Threads"
-				class="text-muted-foreground hover:text-primary block"
+				class="text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
 			>
 				<svg
-					class="size-6"
+					class="size-5"
 					xmlns="http://www.w3.org/2000/svg"
 					width="1em"
 					height="1em"
@@ -129,10 +135,10 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="Instagram"
-				class="text-muted-foreground hover:text-primary block"
+				class="text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
 			>
 				<svg
-					class="size-6"
+					class="size-5"
 					xmlns="http://www.w3.org/2000/svg"
 					width="1em"
 					height="1em"
@@ -149,10 +155,10 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="TikTok"
-				class="text-muted-foreground hover:text-primary block"
+				class="text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
 			>
 				<svg
-					class="size-6"
+					class="size-5"
 					xmlns="http://www.w3.org/2000/svg"
 					width="1em"
 					height="1em"
@@ -165,8 +171,11 @@
 				</svg>
 			</a>
 		</div>
-		<span class="text-muted-foreground block text-center text-sm">
-			© {new Date().getFullYear()} Tailus UI, All rights reserved</span
-		>
+
+		<div class="border-t border-neutral-800 pt-8">
+			<span class="block text-center text-sm text-neutral-500">
+				© {new Date().getFullYear()} Rizk, All rights reserved
+			</span>
+		</div>
 	</div>
 </footer>
