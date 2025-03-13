@@ -1,0 +1,60 @@
+---
+description: 
+globs: **
+alwaysApply: false
+---
+Descripción del Negocio
+Nuestra empresa ofrece una plataforma B2B que ayuda a empresas que utilizan chatbots o asistentes de inteligencia artificial a garantizar que sus respuestas estén alineadas con las políticas de privacidad, uso de datos y estándares éticos de la organización.
+
+Dado que las empresas dependen cada vez más de la IA para interactuar con clientes y usuarios, se enfrentan a desafíos en la gestión de riesgos, como respuestas inapropiadas, sesgo en la IA, divulgación accidental de datos sensibles y cumplimiento normativo. Nuestra plataforma proporciona una solución automatizada para definir, aplicar y auditar guardrails (límites y restricciones) en los modelos de lenguaje, asegurando que operen dentro de los parámetros permitidos.
+
+¿Cómo Funciona la Plataforma?
+Carga y Gestión de Políticas
+
+Las empresas suben sus políticas de privacidad, seguridad y uso de datos a la plataforma.
+Se almacenan en un sistema basado en Git, lo que permite el versionado y la trazabilidad de cambios en el tiempo.
+Se ofrece una interfaz para visualizar, modificar y gestionar las políticas de manera eficiente.
+Generación de Guardrails para IA
+
+La plataforma convierte las políticas en archivos de configuración que pueden ser integrados en los asistentes de IA de los clientes.
+Estos archivos sirven como una capa de control para que la IA solo genere respuestas dentro de los límites definidos.
+Los clientes pueden personalizar estos guardrails según su industria, regulaciones y casos de uso específicos.
+Monitoreo y Auditoría en Tiempo Real
+
+Integramos OpenTelemetry para rastrear y registrar las interacciones del asistente de IA en tiempo real.
+Si una IA genera una respuesta que viola una política, el sistema puede bloquearla o reformularla automáticamente.
+Se genera un historial de cumplimiento, permitiendo a los clientes auditar y ajustar sus políticas según los incidentes detectados.
+Alertas y Reportes
+
+Los clientes pueden recibir notificaciones cuando se detecten respuestas que podrían representar un riesgo.
+Se generan reportes automáticos que ayudan a las empresas a entender patrones de incumplimiento y mejorar su gobernanza de IA.
+Casos de Uso
+Nuestra plataforma es útil para cualquier empresa que implemente chatbots o agentes de IA en áreas críticas como:
+
+Atención al cliente: Evitar respuestas fuera de tono, discriminatorias o que violen políticas de servicio.
+Banca y Finanzas: Asegurar que los asistentes de IA cumplan con regulaciones como GDPR, CCPA, PCI-DSS.
+Salud y Farma: Prevenir la divulgación de información médica sin autorización o el incumplimiento de HIPAA.
+Legal y Compliance: Mantener registros de auditoría y asegurar que la IA no ofrezca consejos legales inapropiados.
+E-commerce y Marketplaces: Evitar que chatbots hagan promesas comerciales incorrectas o generen conflictos con términos de servicio.
+Planes y Monetización
+Ofrecemos tres niveles de servicio:
+
+Plan Open-Source (Gratis)
+
+Empresas pueden utilizar nuestra herramienta con funcionalidades básicas y generar manualmente sus guardrails.
+Ideal para startups o proyectos internos que requieren una solución inicial sin costos.
+Plan Premium (SaaS)
+
+Incluye herramientas de análisis y reportes básicos.
+Permite integración con OpenTelemetry para monitoreo en tiempo real.
+Acceso a soporte técnico y actualizaciones constantes.
+Plan Enterprise (On-Premise)
+
+Para grandes empresas con necesidades avanzadas de seguridad y cumplimiento.
+Instalación en infraestructura privada con soporte dedicado.
+Personalización avanzada de guardrails y reportes.
+Diferenciadores Clave
+Gestión de Políticas basada en Git: Permite trazabilidad y control de versiones.
+Automatización de Guardrails: Convierte políticas en reglas ejecutables para IA sin intervención manual.
+Integración con OpenTelemetry: Monitoreo en tiempo real para prevenir respuestas indebidas.
+Flexibilidad de Implementación: Opciones SaaS y On-Premise para adaptarse a distintos niveles de seguridad empresarial.
