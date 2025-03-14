@@ -41,7 +41,7 @@
 	];
 </script>
 
-<section class="bg-shark-950/50 py-16 sm:py-20 lg:py-24">
+<section class="bg-shark-950/50 py-16 sm:py-20 lg:py-24" id="team">
 	<div class="mx-auto max-w-screen-xl px-4 md:px-8">
 		<div class="mb-12 md:mb-16">
 			<h2 class="font-display text-center text-3xl font-bold text-white md:text-4xl lg:text-5xl">

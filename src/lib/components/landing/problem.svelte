@@ -11,7 +11,7 @@
 	} from '@lucide/svelte';
 </script>
 
-<section class="relative py-24">
+<section class="relative py-24" id="problem">
 	<div class="container relative mx-auto max-w-6xl px-4">
 		<div class="space-y-16">
 			<!-- Main Problem Statement -->
