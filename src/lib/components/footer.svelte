@@ -30,8 +30,7 @@
 	];
 
 	const socialLinks = [
-		{ icon: Github, href: 'https://github.com/rizk', label: 'GitHub' },
-		{ icon: Twitter, href: 'https://twitter.com/rizk', label: 'Twitter' },
+		{ icon: Github, href: 'https://github.com/rizk-tools', label: 'GitHub' },
 		{ icon: Linkedin, href: 'https://linkedin.com/company/rizk', label: 'LinkedIn' }
 	];
 </script>

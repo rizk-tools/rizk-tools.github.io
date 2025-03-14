@@ -7,33 +7,33 @@
 	const team = [
 		{
 			name: 'Ricardo Sandoval',
-			role: 'Co-founder & CEO',
+			role: 'Co-founder',
 			image: ricardo,
 			items: [
 				'10+yr risk manager scaling models for $20B portfolio',
 				'Ex-CTO of GenAI startup',
 				'Leads AI Tinkerers-Mty + Latam AI Builders community'
 			],
-			linkedin: 'https://www.linkedin.com/in/ricardo-ivan-sandoval/'
+			linkedin: 'https://www.linkedin.com/in/ricardo-ivan-sandoval'
 		},
 		{
 			name: 'Carlos Osuna',
-			role: 'Co-founder & CTO',
+			role: 'Co-founder',
 			image: carlos,
 			items: [
 				'Ex-Founder Oha (Currently Kontigo) & Economía Digital',
 				'Lead GenAI Engineer',
 				'Shipped Enterprise grade GenAI from Dubai to Latam'
 			],
-			linkedin: '#'
+			linkedin: 'https://www.linkedin.com/in/carlos-osuna-pinero'
 		},
 		{
 			name: 'Fernando de la Rosa',
-			role: 'Co-founder & CPO',
+			role: 'Co-founder',
 			image: fernando,
 			items: [
-				'Scaled LunaNotes.io to 15k users & Tweet-to-threads to 6k users.',
-				'Full-stack engineer',
+				'Scaled LunaNotes.io to 15k users.',
+				'8+yr Full-stack engineer',
 				'Early startup experience, shipped Healthtech software.'
 			],
 			linkedin: 'https://www.linkedin.com/in/jfdelarosa'
@@ -63,7 +63,7 @@
 						<div class="relative mb-6">
 							<div
 								class="absolute -inset-1 rounded-full bg-gradient-to-br from-electric-lime-400/50 to-electric-lime-600/50 blur transition-all duration-300 group-hover:from-electric-lime-400 group-hover:to-electric-lime-600"
-							/>
+							></div>
 							<div
 								class="relative h-28 w-28 overflow-hidden rounded-full border-2 border-shark-800 md:h-32 md:w-32"
 							>

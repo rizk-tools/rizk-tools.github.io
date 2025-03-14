@@ -48,6 +48,7 @@
 	},
 	"dependencies": {
 		"@lucide/svelte": "^0.479.0",
+		"layercake": "^8.4.2",
 		"mini-svg-data-uri": "^1.4.4",
 		"simplex-noise": "^4.0.3",
 		"svelte-motion": "^0.12.2"
