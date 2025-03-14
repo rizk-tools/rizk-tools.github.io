@@ -1,9 +1,19 @@
-<script>
+<script lang="ts">
 	import GridBeam from './GridBeam.svelte';
-	import Waitlist from './waitlist.svelte';
 	import { Button } from '$lib/components/ui/button';
 	import Hero from '$lib/assets/hero.svelte';
 	import { Github } from '@lucide/svelte';
+	import WaitlistPopup from './waitlist-popup.svelte';
+
+	let isWaitlistPopupOpen = $state(false);
+
+	function handleOpenWaitlistPopup() {
+		isWaitlistPopupOpen = true;
+	}
+
+	function handleWaitlistPopupOpenChange(open: boolean) {
+		isWaitlistPopupOpen = open;
+	}
 </script>
 
 <section id="hero" class="relative overflow-hidden py-20 md:py-32">
@@ -22,9 +32,14 @@
 						into your AI agents with minimal code.
 					</p>
 
-					<Waitlist />
+					<div class="flex flex-col gap-4 sm:flex-row">
+						<Button
+							class="w-full rounded-md bg-electric-lime-400 text-black hover:bg-electric-lime-500 sm:w-auto"
+							onclick={handleOpenWaitlistPopup}
+						>
+							Join Waitlist
+						</Button>
 
-					<div class="mt-2 flex items-center gap-4">
 						<a
 							href="https://github.com/rizk-tools"
 							class="inline-flex h-10 items-center justify-center gap-2 rounded-md border border-shark-700 px-4 text-sm text-white/90 transition-colors hover:bg-shark-800 hover:text-white"
@@ -32,8 +47,6 @@
 							<Github class="h-4 w-4" />
 							GitHub
 						</a>
-						<span class="text-shark-500">•</span>
-						<span class="text-sm text-shark-400">Open Source</span>
 					</div>
 				</div>
 
@@ -50,4 +63,6 @@
 			</div>
 		</div>
 	</GridBeam>
+
+	<WaitlistPopup isOpen={isWaitlistPopupOpen} onOpenChange={handleWaitlistPopupOpenChange} />
 </section>
