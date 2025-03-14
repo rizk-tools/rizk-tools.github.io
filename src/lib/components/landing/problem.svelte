@@ -1,7 +1,6 @@
 <script>
 	import {
 		ArrowRight,
-		Search,
 		AlertTriangle,
 		AlertCircle,
 		Lock,
@@ -17,11 +16,6 @@
 		<div class="space-y-16">
 			<!-- Main Problem Statement -->
 			<div class="mx-auto max-w-3xl text-center">
-				<div
-					class="mb-6 inline-flex items-center justify-center rounded-full bg-zinc-900/50 p-4 ring-1 ring-zinc-800"
-				>
-					<Search class="h-8 w-8 text-zinc-100" />
-				</div>
 				<h2
 					class="mb-6 bg-gradient-to-r from-zinc-100 to-zinc-400 bg-clip-text text-4xl font-bold text-transparent"
 				>
