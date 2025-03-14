@@ -55,7 +55,7 @@
 							</p>
 						</div>
 					</div>
-
+					<!-- 
 					<div class="mt-8">
 						<a
 							href="#docs"
@@ -64,7 +64,7 @@
 							Learn more about our dashboard capabilities
 							<ArrowRight class="h-4 w-4" />
 						</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 

@@ -172,13 +172,13 @@
 					Instead of fixing AI failures after they happen, Rizk prevents them in real-time by
 					enforcing security, compliance, and ethical guidelines at the model level.
 				</p>
-				<a
+				<!-- <a
 					href="#how-it-works"
 					class="group inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-zinc-100 to-white px-6 py-3 text-zinc-900 transition-all duration-300 hover:from-white hover:to-white"
 				>
 					See How It Works
 					<ArrowRight class="h-4 w-4 transition-transform group-hover:translate-x-1" />
-				</a>
+				</a> -->
 			</div>
 
 			<!-- Transition to Providers -->

@@ -70,7 +70,7 @@
 			{/each}
 		</div>
 
-		<div class="mt-16 text-center">
+		<!-- <div class="mt-16 text-center">
 			<a
 				href="#docs"
 				class="inline-flex items-center justify-center gap-2 rounded-md bg-electric-lime-400 px-6 py-3 text-sm font-medium text-black transition-colors hover:bg-electric-lime-500"
@@ -89,6 +89,6 @@
 					class="lucide lucide-arrow-right"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg
 				>
 			</a>
-		</div>
+		</div> -->
 	</div>
 </section>

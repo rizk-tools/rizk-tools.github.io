@@ -7,25 +7,25 @@
 		{
 			title: 'Product',
 			items: [
-				{ title: 'Features', href: '#features' },
-				{ title: 'Pricing', href: '#pricing' },
-				{ title: 'Documentation', href: '#docs' }
+				{ title: 'Features', href: '#' },
+				{ title: 'Pricing', href: '#' },
+				{ title: 'Documentation', href: '#' }
 			]
 		},
 		{
 			title: 'Company',
 			items: [
-				{ title: 'About', href: '#about' },
-				{ title: 'Team', href: '#team' },
-				{ title: 'Careers', href: '#careers' }
+				{ title: 'About', href: '#' },
+				{ title: 'Team', href: '#' },
+				{ title: 'Careers', href: '#' }
 			]
 		},
 		{
 			title: 'Resources',
 			items: [
-				{ title: 'Blog', href: '#blog' },
-				{ title: 'Community', href: '#community' },
-				{ title: 'Contact', href: '#contact' }
+				{ title: 'Blog', href: '#' },
+				{ title: 'Community', href: '#' },
+				{ title: 'Contact', href: '#' }
 			]
 		}
 	];
