@@ -4,6 +4,7 @@
 	import Footer from '$lib/components/footer.svelte';
 	import Faqs from '$lib/components/landing/faqs.svelte';
 	import CTA from '$lib/components/landing/cta.svelte';
+	import SEO from 'svelte-seo';
 
 	import { Spotlight } from '$lib/components/ui/spotlight';
 	import { onMount } from 'svelte';
@@ -15,6 +16,34 @@
 		mounted = true;
 	});
 </script>
+
+<SEO
+	title="Rizk – Open Source AI Policy Enforcement & Compliance"
+	description="Prevent AI failures before they happen. Rizk is an open-source policy enforcement tool that ensures AI agents comply with security, privacy, and ethical guidelines in real-time."
+	openGraph={{
+		title: 'Rizk – Open Source AI Policy Enforcement & Compliance',
+		description:
+			'Prevent AI failures before they happen. Rizk is an open-source policy enforcement tool that ensures AI agents comply with security, privacy, and ethical guidelines in real-time.',
+		images: [
+			{
+				url: '/og-image.png',
+				width: 1200,
+				height: 600,
+				alt: 'Rizk – Open Source AI Policy Enforcement & Compliance'
+			}
+		],
+		type: 'website',
+		site_name: 'Rizk'
+	}}
+	twitter={{
+		card: 'summary_large_image',
+		title: 'Rizk – Open Source AI Policy Enforcement & Compliance',
+		description:
+			'Prevent AI failures before they happen. Rizk is an open-source policy enforcement tool that ensures AI agents comply with security, privacy, and ethical guidelines in real-time.',
+		image: '/og-image.png',
+		imageAlt: 'Rizk – Open Source AI Policy Enforcement & Compliance'
+	}}
+/>
 
 <div class="relative bg-[#080808]">
 	<Navbar />
