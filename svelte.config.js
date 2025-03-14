@@ -34,9 +34,7 @@ const config = {
 			},
 			// Ensure the root path is prerendered with the base path
 			entries: ['*']
-		},
-		// Add trailingSlash configuration to ensure consistent URL handling
-		trailingSlash: 'never'
+		}
 	}
 };
 
