@@ -5,6 +5,7 @@
 	import Faqs from '$lib/components/landing/faqs.svelte';
 	import CTA from '$lib/components/landing/cta.svelte';
 	import SEO from 'svelte-seo';
+	import { base } from '$app/paths';
 
 	import { Spotlight } from '$lib/components/ui/spotlight';
 	import { onMount } from 'svelte';
@@ -26,7 +27,7 @@
 			'Prevent AI failures before they happen. Rizk is an open-source policy enforcement tool that ensures AI agents comply with security, privacy, and ethical guidelines in real-time.',
 		images: [
 			{
-				url: '/og-image.png',
+				url: `${base}/og-image.png`,
 				width: 1200,
 				height: 600,
 				alt: 'Rizk – Open Source AI Policy Enforcement & Compliance'
@@ -40,7 +41,7 @@
 		title: 'Rizk – Open Source AI Policy Enforcement & Compliance',
 		description:
 			'Prevent AI failures before they happen. Rizk is an open-source policy enforcement tool that ensures AI agents comply with security, privacy, and ethical guidelines in real-time.',
-		image: '/og-image.png',
+		image: `${base}/og-image.png`,
 		imageAlt: 'Rizk – Open Source AI Policy Enforcement & Compliance'
 	}}
 />

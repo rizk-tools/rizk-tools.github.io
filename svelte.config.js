@@ -11,6 +11,23 @@ const config = {
 		adapter: adapter(),
 		paths: {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+		},
+		prerender: {
+			handleHttpError: ({ path, message }) => {
+				// Ignore 404s that happen during prerendering
+				if (
+					path.includes('.png') ||
+					path.includes('.jpg') ||
+					path.includes('.svg') ||
+					path.includes('.ico')
+				) {
+					console.warn(`Ignoring missing asset during prerender: ${path}`);
+					return;
+				}
+
+				// Otherwise, fail the build
+				throw new Error(message);
+			}
 		}
 	}
 };
