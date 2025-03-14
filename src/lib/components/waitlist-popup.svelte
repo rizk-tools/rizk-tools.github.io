@@ -98,7 +98,7 @@
 
 <Dialog.Root bind:open={isOpen} onOpenChange={handleClose}>
 	<Dialog.Portal>
-		<Dialog.Overlay class="bg-black/60" />
+		<Dialog.Overlay class="bg-black/20" />
 		<Dialog.Content class="border border-gray-700 bg-[#3a3a3a] p-0 shadow-md sm:max-w-md">
 			<div class="p-6">
 				<Dialog.Title class="text-center text-2xl font-bold text-white">
