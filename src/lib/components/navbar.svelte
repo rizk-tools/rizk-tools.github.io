@@ -50,7 +50,7 @@
 
 				<div class="flex items-center gap-2">
 					<a
-						href="https://github.com/rizk"
+						href="https://github.com/rizk-tools"
 						class="hidden h-8 items-center justify-center gap-2 rounded-md px-3 text-xs text-white/80 transition-colors hover:bg-shark-800 hover:text-white sm:inline-flex"
 					>
 						<Github class="h-4 w-4" />

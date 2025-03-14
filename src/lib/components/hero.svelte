@@ -26,7 +26,7 @@
 
 					<div class="mt-2 flex items-center gap-4">
 						<a
-							href="https://github.com/rizk"
+							href="https://github.com/rizk-tools"
 							class="inline-flex h-10 items-center justify-center gap-2 rounded-md border border-shark-700 px-4 text-sm text-white/90 transition-colors hover:bg-shark-800 hover:text-white"
 						>
 							<Github class="h-4 w-4" />
