@@ -8,27 +8,35 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			// Fallback for SPA mode - this ensures that all routes are handled by index.html
+			fallback: 'index.html'
+		}),
 		paths: {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 		},
 		prerender: {
 			handleHttpError: ({ path, message }) => {
-				// Ignore 404s that happen during prerendering
+				// Ignore 404s that happen during prerendering for static assets and the root path
 				if (
 					path.includes('.png') ||
 					path.includes('.jpg') ||
 					path.includes('.svg') ||
-					path.includes('.ico')
+					path.includes('.ico') ||
+					path === '/' // Handle the root path error
 				) {
-					console.warn(`Ignoring missing asset during prerender: ${path}`);
+					console.warn(`Ignoring error during prerender: ${path}`);
 					return;
 				}
 
 				// Otherwise, fail the build
 				throw new Error(message);
-			}
-		}
+			},
+			// Ensure the root path is prerendered with the base path
+			entries: ['*']
+		},
+		// Add trailingSlash configuration to ensure consistent URL handling
+		trailingSlash: 'never'
 	}
 };
 

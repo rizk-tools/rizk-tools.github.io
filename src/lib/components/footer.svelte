@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Rizk from '$lib/assets/Rizk.svelte';
 	import { Github, Twitter, Linkedin } from '@lucide/svelte';
+	import { base } from '$app/paths';
 
 	const links = [
 		{
@@ -33,13 +34,16 @@
 		{ icon: Github, href: 'https://github.com/rizk-tools', label: 'GitHub' },
 		{ icon: Linkedin, href: 'https://linkedin.com/company/rizk', label: 'LinkedIn' }
 	];
+
+	// Create the home URL with the base path
+	const homeUrl = `${base}/`;
 </script>
 
 <footer class="border-t border-shark-800 bg-[#080808] py-16 text-white/80">
 	<div class="container mx-auto px-6">
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-5">
 			<div class="md:col-span-2">
-				<a href="/" aria-label="go home" class="flex items-center">
+				<a href={homeUrl} aria-label="go home" class="flex items-center">
 					<Rizk />
 				</a>
 
