@@ -8,8 +8,12 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter(),
+		// Use default adapter-static configuration
+		adapter: adapter({
+			fallback: '404.html'
+		}),
 		paths: {
+			// For username.github.io repositories, base should be empty
 			base: ''
 		},
 		prerender: {
