@@ -13,8 +13,8 @@ const config = {
 			fallback: '404.html'
 		}),
 		paths: {
-			// For username.github.io repositories, base should be empty
-			base: ''
+			// Set the base path to the repository name for GitHub Pages
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH || ''
 		},
 		prerender: {
 			entries: ['*']
