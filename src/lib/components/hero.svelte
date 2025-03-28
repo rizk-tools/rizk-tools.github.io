@@ -1,7 +1,7 @@
 <script lang="ts">
 	import GridBeam from './GridBeam.svelte';
 	import { Button } from '$lib/components/ui/button';
-	import Hero from '$lib/assets/hero.svelte';
+	import HeroImg from '$lib/assets/hero.png';
 	import { Github } from '@lucide/svelte';
 	import WaitlistPopup from './waitlist-popup.svelte';
 
@@ -57,7 +57,7 @@
 					<div
 						class="relative rounded-lg border border-shark-800 bg-shark-900/50 p-6 backdrop-blur-sm"
 					>
-						<Hero />
+						<img src={HeroImg} alt="Hero Image" class="h-full w-full object-cover" />
 					</div>
 				</div>
 			</div>
