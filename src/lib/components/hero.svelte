@@ -1,7 +1,7 @@
 <script lang="ts">
 	import GridBeam from './GridBeam.svelte';
 	import { Button } from '$lib/components/ui/button';
-	import HeroImg from '$lib/assets/hero.png';
+	import HeroImg from '$lib/assets/screenshot.png';
 	import { Github } from '@lucide/svelte';
 	import WaitlistPopup from './waitlist-popup.svelte';
 
@@ -21,8 +21,8 @@
 
 	<GridBeam class="relative z-10">
 		<div class="container mx-auto px-4">
-			<div class="flex flex-col items-center justify-between gap-12 md:flex-row">
-				<div class="grid max-w-xl gap-6 animate-in">
+			<div class="flex flex-col items-center justify-between gap-x-24 gap-y-12 md:flex-row">
+				<div class="grid gap-6 animate-in">
 					<h1 class="text-4xl font-bold text-white md:text-6xl">
 						Keep Your AI <span class="gradient-text">Safe & Compliant</span>
 					</h1>
@@ -50,13 +50,11 @@
 					</div>
 				</div>
 
-				<div class="relative w-full max-w-md">
+				<div class="relative max-w-3xl">
 					<div
-						class="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-electric-lime-400 to-amethyst-500 opacity-30 blur-xl"
+						class="absolute -inset-0.5 rounded bg-gradient-to-r from-electric-lime-400 to-amethyst-500 opacity-30 blur-xl"
 					></div>
-					<div
-						class="relative rounded-lg border border-shark-800 bg-shark-900/50 p-6 backdrop-blur-sm"
-					>
+					<div class="relative rounded bg-shark-900/50 backdrop-blur-sm">
 						<img src={HeroImg} alt="Hero Image" class="h-full w-full object-cover" />
 					</div>
 				</div>
