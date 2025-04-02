@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
 	import Rizk from '$lib/assets/Rizk.svelte';
-	import { Github } from '@lucide/svelte';
+	import { Github, FileText, Layers } from '@lucide/svelte';
 </script>
 
 <header
@@ -15,54 +15,48 @@
 				aria-label="Back to homepage"
 				class="flex items-center p-2 transition-transform hover:scale-105"
 			>
-				<Rizk />
+				<Rizk that={{}} class="" />
 			</a>
 
 			<div class="flex items-center gap-4">
-				<nav class="hidden md:block">
-					<ul class="flex items-stretch space-x-6">
-						<li class="flex">
-							<a
-								rel="noopener noreferrer"
-								href="#features"
-								class="flex items-center px-2 text-white/80 transition-colors hover:text-electric-lime-400"
-								>Features</a
-							>
-						</li>
-						<li class="flex">
-							<a
-								rel="noopener noreferrer"
-								href="#problem"
-								class="flex items-center px-2 text-white/80 transition-colors hover:text-electric-lime-400"
-								>Problem</a
-							>
-						</li>
-						<li class="flex">
-							<a
-								rel="noopener noreferrer"
-								href="#team"
-								class="flex items-center px-2 text-white/80 transition-colors hover:text-electric-lime-400"
-								>Team</a
-							>
-						</li>
-					</ul>
-				</nav>
-
-				<div class="flex items-center gap-2">
+				<nav class="hidden items-center gap-2 md:flex">
+					<a
+						href="#features"
+						class="inline-flex h-8 items-center justify-center gap-2 rounded-md px-3 text-xs text-white/80 transition-colors hover:bg-shark-800 hover:text-white"
+					>
+						<Layers class="h-4 w-4" />
+						Features
+					</a>
+					<a
+						href="http://docs.rizk.tools/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="inline-flex h-8 items-center justify-center gap-2 rounded-md px-3 text-xs text-white/80 transition-colors hover:bg-shark-800 hover:text-white"
+					>
+						<FileText class="h-4 w-4" />
+						Docs
+					</a>
 					<a
 						href="https://github.com/rizk-tools"
-						class="hidden h-8 items-center justify-center gap-2 rounded-md px-3 text-xs text-white/80 transition-colors hover:bg-shark-800 hover:text-white sm:inline-flex"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="inline-flex h-8 items-center justify-center gap-2 rounded-md px-3 text-xs text-white/80 transition-colors hover:bg-shark-800 hover:text-white"
 					>
 						<Github class="h-4 w-4" />
 						GitHub
 					</a>
-					<Button
-						variant="default"
-						size="sm"
-						class="bg-electric-lime-400 text-black hover:bg-electric-lime-500"
-					>
-						Get Started
-					</Button>
+				</nav>
+
+				<div class="flex items-center">
+					<a href="https://app.rizk.tools/auth/signup" target="_blank" rel="noopener noreferrer">
+						<Button
+							variant="default"
+							size="sm"
+							class="bg-electric-lime-400 text-black hover:bg-electric-lime-500"
+						>
+							Get Started
+						</Button>
+					</a>
 				</div>
 			</div>
 		</div>
